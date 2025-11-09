@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Hobbies and Interests Survey</h1>
+        <p id="description">
+          Let us know what hobbies and activities you enjoy in your free time.
+          Your answers will help us create better content for hobbyists!
+        </p>
+      </div>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label" class="block">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="block" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="number" class="block" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="7"
+            max="100"
+            placeholder="Enter your age"
+          />
+        </div>
+
+        <!-- Checkboxes -->
+
+        <div class="form-group">
+          <p class="group-label">What are your hobbies?</p>
+          <div class="checkbox-group">
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="reading"
+                value="Reading"
+              />
+              <label for="reading">Reading Books or Stories</label>
+            </div>
+
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="sports"
+                value="Sports"
+              />
+              <label for="sports">Playing Sports </label>
+            </div>
+
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="painting"
+                value="Painting"
+              />
+              <label for="painting">Painting/Drawing</label>
+            </div>
+
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="cooking"
+                value="Cooking"
+              />
+              <label for="cooking">Cooking</label>
+            </div>
+
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="gardening"
+                value="Gardening"
+              />
+              <label for="gardening">Gardening</label>
+            </div>
+
+            <div class="align">
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="traveling"
+                value="Traveling"
+              />
+              <label for="traveling">Traveling</label>
+            </div>
+
+            <div class="align">
+              <input type="checkbox" name="other" id="other" value="Other" />
+              <label for="other">Other</label>
+            </div>
+
+            <input
+              type="text"
+              id="other-hobbies"
+              placeholder="Type your hobby here"
+              name="other-hobbies"
+            />
+          </div>
+        </div>
+
+        <!-- Radio buttons -->
+        <div class="form-group">
+          <p class="group-label">You like hobbies that are:</p>
+          <div class="radio-group">
+            <div class="align">
+              <input
+                type="radio"
+                name="hobby-type"
+                value="Indoor"
+                id="indoor"
+              />
+              <label for="indoor">Indoor</label>
+            </div>
+
+            <div class="align">
+              <input
+                type="radio"
+                name="hobby-type"
+                value="Outdoor"
+                id="outdoor"
+              />
+              <label for="outdoor">Outdoor</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- select-drpdown -->
+        <div class="form-group">
+          <label for="dropdown"
+            >What type of hobbies do you enjoy the most?</label
+          >
+          <select name="hobby-nature" id="dropdown" required>
+            <option value="">Select an option</option>
+            <option value="Creative">Creative</option>
+            <option value="Physical">Physical / Sports</option>
+            <option value="Intellectual">Intellectual / Learning</option>
+            <option value="Social">Social / Group activities</option>
+          </select>
+        </div>
+
+        <!-- Textarea for comments -->
+        <div class="form-group">
+          <label for="comments">Additional Comments</label>
+          <textarea
+            placeholder="Share anything else about your hobbies..."
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="form-group"><button id="submit">Submit Survey</button></div>
+      </form>
+    </div>
+  </body>
+</html>

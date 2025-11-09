@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* //font-family: "Poppins", sans-serif; */
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 30px 10px;
+  min-height: 100vh;
+}
+.container {
+  max-width: 600px;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+  padding: 30px 40px;
+  transition: all 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-5px);
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+#description {
+  font-size: 1rem;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+label,
+.group-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #66a6ff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(102, 166, 255, 0.4);
+}
+.align {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: -12px;
+  /* gap: 8px;
+  margin-bottom: 6px;
+  font-weight: 500; */
+}
+.align label {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.75;
+  margin-top: 7.7px;
+}
+.checkbox-group input,
+.radio-group input {
+  accent-color: #66a6ff;
+  transform: scale(1.1);
+}
+#other-hobbies {
+  margin-top: 6px;
+  width: 100%;
+}
+select {
+  background-color: #f9f9f9;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.28rem;
+  background: linear-gradient(90deg, #66a6ff, #89f7fe);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+  transform: scale(1.02);
+}
