@@ -19,7 +19,7 @@ body {
 }
 .container {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.623);
+  background: rgba(255, 255, 255, 0.7);
 
   width: 100%;
   border-radius: 16px;
@@ -66,9 +66,9 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #66a6ff;
+  border-color: green;
   outline: none;
-  box-shadow: 0 0 6px rgba(102, 166, 255, 0.4);
+  box-shadow: 0 0 6px lightgreen;
 }
 .align {
   display: flex;
