@@ -80,6 +80,31 @@ textarea:focus {
   margin-bottom: 6px;
   font-weight: 500; */
 }
+#input-btn-div {
+  display: none;
+  align-items: center;
+  margin-top: 10px;
+}
+#other-hobbies-input {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  width: 80%;
+  margin-left: 20px;
+}
+#input-btn-div button {
+  font-size: 1rem;
+  border: none;
+  margin-top: 5px;
+  color: rgb(0, 0, 0, 0.43);
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-left: 2rem;
+  transition: 0.3s ease;
+}
+#input-btn-div button:hover {
+  transform: scale(1.07);
+}
+
 .align label {
   font-size: 1rem;
   font-weight: 400;
@@ -91,14 +116,11 @@ textarea:focus {
   accent-color: #66a6ff;
   transform: scale(1.1);
 }
-#other-hobbies {
-  margin-top: 6px;
-  width: 100%;
-}
+
 select {
   background-color: #f9f9f9;
 }
-button {
+#submit {
   width: 100%;
   padding: 12px;
   font-size: 1.28rem;
@@ -110,7 +132,7 @@ button {
   cursor: pointer;
   transition: 0.3s ease;
 }
-button:hover {
+#submit:hover {
   background-color: rgba(14, 77, 102, 0.7);
   transform: scale(1.02);
 }
