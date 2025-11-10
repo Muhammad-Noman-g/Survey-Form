@@ -3,6 +3,7 @@ const input = document.querySelector("#other-hobbies-input");
 const other = document.querySelector("#other");
 const checkboxGroup = document.querySelector(".checkbox-group");
 const inputBtn = document.querySelector("#input-btn-div button");
+const submitBtn = document.querySelector("#submit");
 
 other.addEventListener("change", function () {
   inputDiv.style.display = this.checked ? "flex" : "none";
@@ -39,3 +40,9 @@ function addHobby() {
   other.checked = false;
   other.dispatchEvent(new Event("change"));
 }
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert(`The form is successfully submitted.
+   Thank you for your time!`);
+});
